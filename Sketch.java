@@ -8,11 +8,8 @@ public class Sketch extends PApplet {
    */
   public void settings() {
 	// put your size call here
-
-
-   int width = 1000;
-  int height = 1000;
-    size(width, height);
+  
+    size(1000, 1000);
   }
 
   /** 
