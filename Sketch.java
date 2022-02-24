@@ -1,5 +1,10 @@
 import processing.core.PApplet;
 
+/**
+ * a program Sketch.java that lets you enter a width and height dimentions of a screen and displays a picture 
+ * of flowers with a background
+ */
+
 public class Sketch extends PApplet {
 	
 	
@@ -8,7 +13,7 @@ public class Sketch extends PApplet {
    */
   public void settings() {
 	// put your size call here
-  
+
     size(1000, 1000);
   }
 
@@ -25,16 +30,16 @@ public class Sketch extends PApplet {
    */
   public void draw() {
 
-    float sunLength = (float)(height/2);
-    float sunWidth = (float)(width/2);
-    float ground = (float)(height*0.75);
-    float purpFlowerMidX = (float)(width/2);
-    float flowerStem1y = (float)(height*0.75);
-    float flowerMid2y = (float)(height*0.55);
-    float petalLength = (float)(height/7);
-    float pistalSize = (float)(width/20);
-    float redFlowerMidX = (float)(width*0.75);
-    float blueFlowerMidX = (float)(width/4);
+    float sunLength = (float)(height / 2);
+    float sunWidth = (float)(width / 2);
+    float ground = (float)(height * 0.75);
+    float purpFlowerMidX = (float)(width / 2);
+    float flowerStem1y = (float)(height * 0.75);
+    float flowerMid2y = (float)(height * 0.55);
+    float petalLength = (float)(height / 7);
+    float pistalSize = (float)(width / 20);
+    float redFlowerMidX = (float)(width * 0.75);
+    float blueFlowerMidX = (float)(width / 4);
 
     //sun
     fill(255, 255, 0);
