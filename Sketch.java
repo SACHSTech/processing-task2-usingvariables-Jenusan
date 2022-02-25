@@ -30,61 +30,61 @@ public class Sketch extends PApplet {
    */
   public void draw() {
 
-    float sunLength = (float)(height / 2);
-    float sunWidth = (float)(width / 2);
-    float ground = (float)(height * 0.75);
-    float purpFlowerMidX = (float)(width / 2);
-    float flowerStem1y = (float)(height * 0.75);
-    float flowerMid2y = (float)(height * 0.55);
-    float petalLength = (float)(height / 7);
-    float pistalSize = (float)(width / 20);
-    float redFlowerMidX = (float)(width * 0.75);
-    float blueFlowerMidX = (float)(width / 4);
+    float fltSunLength = (float)(height / 2);
+    float fltSunWidth = (float)(width / 2);
+    float fltGround = (float)(height * 0.75);
+    float fltPurpFlowerMidX = (float)(width / 2);
+    float fltFlowerStem1y = (float)(height * 0.75);
+    float fltFlowerMid2y = (float)(height * 0.55);
+    float fltPetalLength = (float)(height / 7);
+    float fltPistalSize = (float)(width / 20);
+    float fltRedFlowerMidX = (float)(width * 0.75);
+    float fltBlueFlowerMidX = (float)(width / 4);
 
     //sun
     fill(255, 255, 0);
-    ellipse(width, 0, sunWidth, sunLength);
+    ellipse(width, 0, fltSunWidth, fltSunLength);
 
     //foreground
     //casting values to int
     fill(0, 255, 0);
-    rect(0, ground, width, height);
+    rect(0, fltGround, width, height);
 
     //purple flower
-    line(purpFlowerMidX, flowerStem1y, purpFlowerMidX, flowerMid2y);
+    line(fltPurpFlowerMidX, fltFlowerStem1y, fltPurpFlowerMidX, fltFlowerMid2y);
 
     fill(102,0,153);
-    ellipse(purpFlowerMidX, flowerMid2y, petalLength, pistalSize);
+    ellipse(fltPurpFlowerMidX, fltFlowerMid2y, fltPetalLength, fltPistalSize);
 
     fill(102,0,153);
-    ellipse(purpFlowerMidX, flowerMid2y, pistalSize, petalLength);
+    ellipse(fltPurpFlowerMidX, fltFlowerMid2y, fltPistalSize, fltPetalLength);
 
     fill(255,255,0);
-    ellipse(purpFlowerMidX, flowerMid2y, pistalSize, pistalSize);
+    ellipse(fltPurpFlowerMidX, fltFlowerMid2y, fltPistalSize, fltPistalSize);
 
     //red flower
-    line(redFlowerMidX, flowerStem1y, redFlowerMidX, flowerMid2y);
+    line(fltRedFlowerMidX, fltFlowerStem1y, fltRedFlowerMidX, fltFlowerMid2y);
 
     fill(255,0,0);
-    ellipse(redFlowerMidX, flowerMid2y, petalLength, pistalSize);
+    ellipse(fltRedFlowerMidX, fltFlowerMid2y, fltPetalLength, fltPistalSize);
 
     fill(255,0,0);
-    ellipse(redFlowerMidX, flowerMid2y, pistalSize, petalLength);
+    ellipse(fltRedFlowerMidX, fltFlowerMid2y, fltPistalSize, fltPetalLength);
 
     fill(255,255,0);
-    ellipse(redFlowerMidX, flowerMid2y, pistalSize, pistalSize);
+    ellipse(fltRedFlowerMidX, fltFlowerMid2y, fltPistalSize, fltPistalSize);
 
     //blue flower
-    line(blueFlowerMidX, flowerStem1y, blueFlowerMidX, flowerMid2y);
+    line(fltBlueFlowerMidX, fltFlowerStem1y, fltBlueFlowerMidX, fltFlowerMid2y);
 
     fill(0,0,255);
-    ellipse(blueFlowerMidX, flowerMid2y, petalLength, pistalSize);
+    ellipse(fltBlueFlowerMidX, fltFlowerMid2y, fltPetalLength, fltPistalSize);
  
     fill(0,0,255);
-    ellipse(blueFlowerMidX, flowerMid2y, pistalSize, petalLength);
+    ellipse(fltBlueFlowerMidX, fltFlowerMid2y, fltPistalSize, fltPetalLength);
 
     fill(255,255,0);
-    ellipse(blueFlowerMidX, flowerMid2y, pistalSize, pistalSize);
+    ellipse(fltBlueFlowerMidX, fltFlowerMid2y, fltPistalSize, fltPistalSize);
 
   }
 }
