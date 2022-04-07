@@ -14,7 +14,7 @@ public class Sketch extends PApplet {
   public void settings() {
 	// put your size call here
 
-    size(1000, 1000);
+    size(800, 800);
   }
 
   /** 
@@ -30,20 +30,31 @@ public class Sketch extends PApplet {
    */
   public void draw() {
 
-    float fltSunLength = (float)(height / 2);
-    float fltSunWidth = (float)(width / 2);
-    float fltGround = (float)(height * 0.75);
-    float fltPurpFlowerMidX = (float)(width / 2);
-    float fltFlowerStem1y = (float)(height * 0.75);
-    float fltFlowerMid2y = (float)(height * 0.55);
-    float fltPetalLength = (float)(height / 7);
-    float fltPistalSize = (float)(width / 20);
-    float fltRedFlowerMidX = (float)(width * 0.75);
-    float fltBlueFlowerMidX = (float)(width / 4);
+    // Initialize variables
+    float fltGround;
+    float fltPurpFlowerMidX;
+    float fltFlowerStem1y;
+    float fltFlowerMid2y;
+    float fltPetalLength;
+    float fltPistalSize;
+    float fltRedFlowerMidX;
+    float fltBlueFlowerMidX;
+
+    // calculate positions of objects of flower based on dimentions of backround
+    fltGround = (float)(height * 0.75);
+    fltPurpFlowerMidX = (float)(width / 2);
+    fltFlowerStem1y = (float)(height * 0.75);
+    fltFlowerMid2y = (float)(height * 0.55);
+    fltPetalLength = (float)(height / 7);
+    fltPistalSize = (float)(width / 20);
+    fltRedFlowerMidX = (float)(width * 0.75);
+    fltBlueFlowerMidX = (float)(width / 4);
+
+    // all dimentions of shapes are made using calculated values above
 
     //sun
     fill(255, 255, 0);
-    ellipse(width, 0, fltSunWidth, fltSunLength);
+    ellipse(width, 0, width / 2, width / 2);
 
     //foreground
     //casting values to int
