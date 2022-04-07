@@ -3,6 +3,7 @@ import processing.core.PApplet;
 /**
  * a program Sketch.java that lets you enter a width and height dimentions of a screen and displays a picture 
  * of flowers with a background.
+ * @author: Jenusan Y
  */
 
 public class Sketch extends PApplet {
